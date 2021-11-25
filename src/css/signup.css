@@ -1,0 +1,44 @@
+.form_wrapper2 {
+    margin-top: 5%;
+    margin-bottom: 1%;
+    display: grid;
+    grid-template-rows: 100px 380px;
+    background-color: antiquewhite;
+    max-width: 400px;
+    filter: drop-shadow(0 0 10px #0003);
+    border: 1px black solid;
+}
+
+.error_input {
+    border: rgb(244, 82, 82) 3px solid; 
+    padding: 5px 0px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.success_input {
+    border: rgb(106, 220, 112) 3px solid; 
+    padding: 5px 0px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.error_label {
+    color: rgb(244, 82, 82); 
+}
+
+.login_inputs {
+    padding: 5px 0px;
+    width: 100%;
+    margin-bottom: 30px;
+    border: none;
+    outline: slategray 1px solid;
+}
+
+.remember_session {
+    text-align: center;
+}
+
+#login_button:active {
+    color: white;
+}

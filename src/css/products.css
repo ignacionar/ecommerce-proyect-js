@@ -1,0 +1,145 @@
+#products_wrapper {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-column-gap: 30px;
+}
+
+.products_popups {
+    display: grid;
+    grid-template-columns: 600px 200px;
+    align-content: center;
+    align-items: center;
+}
+
+#filters {
+    margin: 20px 0px;
+    background-color: antiquewhite;
+    filter: drop-shadow(0 0 10px #0003);
+    border-radius: 10px;
+    height: 380px;
+    display: grid;
+    grid-template-rows: 180px 180px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; /* required */
+    align-items: center;
+}
+
+#clean_filters {
+    position: absolute;
+    top: 0px;
+    background-color: white;
+    font-weight: bold;
+    right: 0px;
+    padding: 10px;
+    border: black 1px solid;
+    cursor: pointer;
+}
+
+.ul_filters {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    top: 20px;
+}
+
+.item {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.card {
+    filter: drop-shadow(15px 15px 15px #0003);
+    margin-top: 20px;        
+    margin-bottom: 15px;     
+    height: fit-content;
+}
+
+.card:hover {
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.card_image {
+    margin: 0 auto; 
+    max-height: 200px;
+    max-width: 250px;
+    border: 2px solid #323232;
+}
+
+#blue_filter {
+    background: rgb(75, 134, 236)
+}
+
+.popup_btns {
+    border: 1px black solid;
+    background-color: white;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: black;
+}
+
+.popup_btns:hover {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+
+.popup_btns:active {
+    transform: scale(0.95);
+    border: 3px white solid;
+    color: white;
+}
+
+#search {
+    padding: 12px;
+    border: 2px solid rgb(91, 84, 18);
+    margin-bottom: 5px;
+}
+
+#element_image {
+    max-width: 500px;
+}
+
+@media all and (max-width: 600px) {
+
+    #products_wrapper {
+        display: block;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    #filters {
+        margin: 20px 0px;
+        background-color: antiquewhite;
+        filter: drop-shadow(0 0 10px #0003);
+        border-radius: 10px;
+        height: 380px;
+        position: relative;
+        display: grid;
+        align-items: center;
+    }
+    .products {
+        color: black;
+        display: block;
+        margin-top: 25px;
+    }
+    .products_popups {
+        display: block;
+    }
+    .card {
+        max-width: 250px;
+        margin-bottom: 20px;
+    }
+    #element_image {
+        max-width: 350px;
+    }
+}
